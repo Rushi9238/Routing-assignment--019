@@ -43,14 +43,45 @@ border-radius: 50%;
     list-style-type: none;
     /* display: flex; */
 }
-.navbar ul a{
+ a{
+    margin: 2rem;
     text-decoration: none;
+    color: white;
+    font-size: 1.4rem;
 
 }
-.navbar ul .active{
+
+.active{
     font-size: 1.3rem;
-    color: red;
+    /* color: red; */
     /* text-decoration: none; */
 
 
+}
+@media only screen and (min-width:560px) and (max-width:744px){
+a{
+    font-size: 1.2rem;
+    /* border: 2px solid red; */
+    margin: 1rem;
+
+}
+.h1{
+font-size: 1.6rem;
+}
+}
+@media only screen and (min-width:280px) and (max-width:370px){
+    a{
+        font-size: 1.2rem;
+        /* border: 2px solid red; */
+        margin: 1rem;
+    
+    }
+    .h1{
+    font-size: 1.4rem;
+    }
+}
+@media only screen and (max-width:280px){
+    .h1{
+        font-size: 1rem;
+        }
 }
