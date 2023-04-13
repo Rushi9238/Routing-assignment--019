@@ -3,8 +3,13 @@ import '../CSS_files/Product.css'
 import { myContext } from '../Components/ContextProvider';
 
 const Product = () => {
-  const{product}=useContext(myContext)
-  console.log(product);
+  const{product,cart,setCart,cartCount,setCartCount}=useContext(myContext)
+
+  const addProduct=(ele)=>{
+    cart.push(ele)
+    // console.log(cart);
+    setCartCount(cartCount+1)
+  }
 
   return (
     <>
@@ -17,7 +22,9 @@ const Product = () => {
           <h2>{ele.category}</h2>
           <p>Price: {ele.price} $</p>
           <span>Free delivery</span>
-          <button>ADD TO CART</button>
+          <button onClick={()=>{
+            addProduct(ele)
+          }}>ADD TO CART</button>
         </div>
         
       })

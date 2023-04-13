@@ -13,8 +13,8 @@
 .product .card{
     /* border: 2px solid red; */
     height: 85%;
-    width: 30%;
-    margin: 1rem;
+    width: 22.5%;
+    margin: 0.9rem;
     display: flex;
     padding-left: 2rem;
     flex-direction: column;
@@ -53,12 +53,12 @@ font-size: 1.3rem;
 outline: none;
 border: none;
 transition: .3s;
-height: 12%;
+height: 8%;
 width: 60%;
 background-color: deepskyblue;
 border-radius: 50px;
 color: white;
-font-size: 1.4rem;
+font-size: 1.3rem;
 cursor: pointer;
 transition: 0.1s;
 }

@@ -1,7 +1,10 @@
-import React from 'react'
+import React,{useContext} from 'react'
 import '../CSS_files/NavBar.css'
 import { NavLink } from 'react-router-dom'
+import { myContext } from '../Components/ContextProvider';
 const NavBar = () => {
+    const{cartCount}=useContext(myContext)
+    console.log(cartCount);
   return (
     <>
     <div className='navbar'>
@@ -14,7 +17,7 @@ const NavBar = () => {
         <li>Product</li>
         </NavLink>
         <NavLink to={'/cart'}>
-        <li className='count'>Add to cart <span>1</span></li>
+        <li className='count'>Add to cart {cartCount>0 ? <span>{cartCount}</span>:<p></p>}</li>
         </NavLink>
       </ul>
     </div>
