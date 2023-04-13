@@ -141,8 +141,8 @@
     
     .product .card {
         /* border: 2px solid red; */
-        height: 85%;
-        width: 65%;
+        height: 80%;
+        width: 70%;
         /* margin: 0.4rem; */
     }
     .product .card h2 {
@@ -165,7 +165,7 @@
     
     .product .card {
         /* border: 2px solid red; */
-        height: 42%;
+        height: 50%;
         width: 45%;
         margin: 0.4rem;
         padding-left: .8rem;
